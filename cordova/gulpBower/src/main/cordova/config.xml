@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="jslaboratory.cordova.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloWorld</name>
+<widget id="jslaboratory.cordova.gulpbower" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>GulpBower</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <author href="http://cordova.io" href="https://github.com/Denys-Viliuzhanin/jslaboratory">
+    <author href="https://github.com/Denys-Viliuzhanin/jslaboratory">
         Denys Viliuzhanin
     </author>
     <content src="index.html" />
@@ -16,5 +16,11 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <engine name="browser" spec="^5.0.3" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
 </widget>
