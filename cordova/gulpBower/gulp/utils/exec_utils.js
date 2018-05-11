@@ -12,8 +12,8 @@ function executeCommand(command, options) {
       if (stdout) {
           console.log(stdout);
       }
-      if (stderr) {
-          console.log("Command execution error: ", stderr);
+      if (err) {
+          console.log("Command execution error: ", err, stderr);
           return reject(err);
       }
       return resolve(err);
